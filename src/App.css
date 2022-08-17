@@ -10,9 +10,35 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  padding: 16px;
   color: white;
 }
 
 button {
   font-size: 48px;
+}
+
+h1 {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 11ch;
+  
+  animation: typing 2s steps(11), blink .5s infinite step-end alternate;
+  overflow:hidden;
+  }
+  
+  @keyFrames typing {
+  from { width: 0}
+  }
+  
+  @keyFrames blink {
+   50% { border-color: transparent}
+  }
+
+a {
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
 }
